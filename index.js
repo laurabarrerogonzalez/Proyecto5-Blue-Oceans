@@ -22,6 +22,6 @@ function loadContent(page) {
     }
   });
   
-  // Carga la página inicial
+
   
-  loadContent('home'+ 'about');
+  
