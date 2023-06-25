@@ -27,7 +27,7 @@ function initializeAdminPage() {
       reader.onload = function(event) {
         const imageUrl = event.target.result;
 
-        // Prompt the user for the title
+        
         const title = prompt('Enter the title for the image:');
         const text = prompt('Enter the text for the image:');
         const imageItem = createImageItem(imageUrl, title, text, previewContainer, true);
@@ -55,8 +55,8 @@ function createImageItem(imageUrl, title, text, previewContainer, isAdminPage) {
 
   const previewImage = document.createElement('img');
   previewImage.src = imageUrl;
-  previewImage.style.width = '100%'; // Establecemos un ancho del 100%
-  previewImage.style.height = 'auto'; // La altura se ajustará automáticamente
+  previewImage.style.width = '100%'; 
+  previewImage.style.height = 'auto'; 
   imageItem.appendChild(previewImage);
 
   const imageTitle = document.createElement('h3');
@@ -97,7 +97,7 @@ function createImageItem(imageUrl, title, text, previewContainer, isAdminPage) {
     readMoreButton.innerText = 'Leer más';
     readMoreButton.addEventListener('click', function() {
       toggleText(imageText, readMoreButton, imageItem);
-      adjustStylesToText(imageText, imageItem); // Añadido para ajustar los estilos al texto
+      adjustStylesToText(imageText, imageItem); 
     });
     buttonContainer.appendChild(readMoreButton);
   }
